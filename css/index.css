@@ -1,0 +1,58 @@
+
+        :root{
+            --color-white:#f3f3f3;
+            --color-darkblue: #1b1b32;
+            --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+            --color-green: #37af65;
+        }
+        body{
+            background-image:url(../images/vikrant.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            position: relative;
+            background-position: center;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--color-white);
+            font-family: Helvetica,sans-serif;
+            overflow:scroll;
+        }
+        .layer {
+            background-color: rgba(148,66,189,0.7);
+            background-attachment: fixed;
+            background-repeat: repeat;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+        
+        header
+        {
+            text-align: center;
+        }
+        .main
+        {
+            margin: 5% 30%;
+        }
+        header p{
+            font-style: oblique;
+            
+        }
+        div{
+            display: block;
+        }
+        .review-form
+        {
+            padding:25px;
+            margin-top:40px;
+            background-color: var(--color-darkblue-alpha);
+            border-radius: 10px;
+        }
+        textarea{
+            overflow: visible;
+
+        }

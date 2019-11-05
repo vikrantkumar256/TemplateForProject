@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+    <div class="layer">
+    <main class="main">
+        <div>
+        <header class="header">
+            <h1 style="font-family : 'sans-serif';" id="title">
+                InfinityVoborics Survey Form
+            </h1>
+            <p id="description">
+                We are glad that you are here.A heartily warm welcome for your review.
+            </p>
+        </header>
+        </div>
+        <div class="review-form">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" name="username" class="form-control" placeholder="Enter Your Name " required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email " required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age<span class="input-hint">(optional)</span></label>
+                    <input type="number" id="number" name="age" class="form-control" placeholder="Age" min="12" max="24">
+                </div>
+                <div class="form-group">
+                    <p>Which option describes your current role? </p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time JOb</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                </div>
+                <div class="form-group">
+                        <p>What would you like to see improved? <span class="input-hint">(check all that apply)</span> </p>
+                        <div class="row">
+                            
+                        <div class="col-xs-1">
+                                <input type="checkbox" id="tutors" name="suggestion" value="tutors" >
+                        </div>
+                        <div class="col-xs-10">
+                                <label for="tutors">Tutors in your batch</label></div>
+                        </div>
+                        <div class="row">
+                            
+                        <div class="col-xs-1">
+                                <input type="checkbox" id="batchmate" name="suggestion" value="batchmate" >
+                        </div>
+                        <div class="col-xs-10">
+                                <label for="batchmate">BatchMate</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                    <input type="checkbox" id="test-question" name="suggestion"  value="test-question"></div>
+                            
+                             <div class="col-xs-10">
+                                    <label for="test-question">Difficulty level of question in test</label></div>
+                                    
+                             
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-1">
+                                    <input type="checkbox" id="batch-upgrade" name="suggestion"  value="batch-upgrade">
+                            </div>
+                            <div class="col-xs-10">
+                                    <label for="batch-upgrade" >Batch Upgrade</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-1">
+                                        <input type="checkbox" id="content" name="suggestion"  value="content">
+                                </div>
+                                <div class="col-xs-10">
+                                        <label for="content">Content Material for the topic</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-xs-1">
+                                            <input type="checkbox" id="response-time" name="suggestion"  value="response-time">
+                                    </div>
+                                    <div class="col-xs-10">
+                                            <label for="response-time">Response time for your query</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-xs-1">
+                                                <input type="checkbox" id="mentor-interaction" name="suggestion"  value="mentor-interaction">
+                                        </div>
+                                        <div class="col-xs-10">
+                                                <label for="mentor-interaction">Interaction with mentor</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-xs-1">
+                                                    <input type="checkbox" id="batchmate-interaction" name="suggestion" value="batchmate-interaction">
+                                            </div>
+                                            <div class="col-xs-10">
+                                                    <label for="batchmate-interaction">Interaction with batchmate</label>
+                                            </div>
+                                        </div>
+                </div>
+                <div class="form-group">
+                    <p>
+                        Short description of your problem ?
+                    </p>
+                    <textarea id="comments" class="form-control" placeholder="Enter your comment here..." name="comment" ></textarea>
+
+                </div> 
+                
+                    <div class="form-group">
+                        <p>
+                            Any comments or suggestion ?
+                        </p>
+                        <textarea id="comments" class="form-control" placeholder="Enter your comment here..." name="comment" ></textarea>
+
+                    </div> 
+                <div class="form-group">
+                    <p>How would you rate the service ?</p>
+                    <div class="row">
+                        <div class="col-xs-1">
+                                <input type="radio" id="good" name="feel"  value="good">
+                        </div>
+                        <div class="col-xs-10">
+                                <label for="good">good</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-1">
+                                <input type="radio" id="better" name="feel"  value="better">
+                        </div>
+                        <div class="col-xs-10">
+                                <label for="better">better</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-1">
+                                <input type="radio" id="best" name="feel"  value="best">
+                        </div>
+                        <div class="col-xs-10">
+                                <label for="best">best</label>
+                        </div>
+                    </div>
+                </div>
+                     
+                <div class="form-group">
+                    <button class="btn btn-block btn-primary" id="submit">submit</button>
+                </div>
+                        
+                        
+                        
+            </form>
+        </div>
+    
+    </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>
