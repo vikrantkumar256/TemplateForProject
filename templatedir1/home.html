@@ -1,105 +1,144 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyPortFolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
-        :root{
-                --main-white: #f0f0f0;
-                --main-red: #be3144;
-                --main-blue: #45567d;
-                --main-gray: #303841;
-            }
-        body{
+        :root {
+            --main-white: #f0f0f0;
+            --main-red: #be3144;
+            --main-blue: #45567d;
+            --main-gray: #303841;
+        }
+
+        body {
             margin: 0;
             padding: 0;
-            font-family: Helvetica,sans-serif;
+            font-family: Helvetica, sans-serif;
             font-size: 18px;
             font-weight: 400;
         }
-        .navigation{
+
+        .navigation {
             position: fixed;
             height: 7%;
-            background-color:#ee6e73;
+            background-color: #ee6e73;
             border-bottom: solid black 2px;
-            width:100%;
+            width: 100%;
             top: 0;
             left: 0;
             display: flex;
             justify-content: flex-end;
         }
-        div{
+
+        div {
             display: block;
         }
-        li{
-            display:inline-block;
+
+        li {
+            display: inline-block;
         }
-        .nav-1{
+
+        .nav-1 {
             display: flex;
             flex-direction: row;
             height: 100%;
             margin-right: 5%;
             align-content: center;
         }
-        .list-item{
+
+        .list-item {
             padding: 3% 1.8rem;
             margin-right: 1.2rem;
             font-size: 2.2rem;
             height: 100%;
-            }
-        .list-item:hover
-        {
+        }
+
+        .list-item:hover {
             background-color: var(--main-blue);
         }
-        .nav-1-links{
+
+        .nav-1-links {
             color: #FFF;
         }
-        .logo-image
-        {
+
+        .logo-image {
             height: 100%;
             width: fit-content;
         }
-        .logo{
-            position:absolute;
-            left:10%;
+
+        .logo {
+            position: absolute;
+            left: 10%;
             top: 0;
             height: 100%;
         }
-        a:hover{
+
+        a:hover {
             color: white;
         }
+        .search-bar{
+            align-self: center;
+            width: 30%;
+        }
+        .search-bar input{
+            width: 80%;
+        }
+        
+        .menu-icon{
+            position: absolute;
+            left: 5px;
+            align-self: center;
+        }
+       
+        
     </style>
 </head>
+
 <body>
     <div class="navigation">
+        <div class="menu-icon container-fluid">
+                <i class="fas fa-bars fa-lg" ></i>
+        </div>
 
-        <div class="logo">
+        <div class="logo container-fluid">
             <a href="about.html">
-            <img src="../images/signage.png" class="logo-image"></a>
+                <img src="../images/signage.png" class="logo-image"></a>
+        </div>
+        <div class="search-bar ">
+            <input type="text" placeholder="search" name="search-icon" class="containe-fluid"/>
+            <button type="submit" class="btn"> <i class="fas fa-search fa-lg"></i></button>
+           
         </div>
         <ul class="nav-1">
             <div class="list-item">
-            <li>
-               <a href="#" class="nav-1-links">About</a>
-            </li> 
+                <li>
+                    <a href="#" class="nav-1-links">About</a>
+                </li>
             </div>
             <div class="list-item">
-            <li>
-                <a href="home.html" class="nav-1-links">Home</a>
-            </li></div>
+                <li>
+                    <a href="home.html" class="nav-1-links">Home</a>
+                </li>
+            </div>
             <div class="list-item">
-            <li>
-                <a href="login.html" class="nav-1-links">Login</a>
-            </li></div>
+                <li>
+                    <a href="login.html" class="nav-1-links">Login</a>
+                </li>
+            </div>
             <div class="list-item">
-            <li>
-                <a href="signup.html" class="nav-1-links">Signup</a>
-            </li>
-        </div>
+                <li>
+                    <a href="signup.html" class="nav-1-links">Signup</a>
+                </li>
+            </div>
         </ul>
     </div>
 </body>
+
 </html>
