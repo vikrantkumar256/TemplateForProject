@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StudentV(HOME)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .navigation{
+            background-color: #eebe73;
+            font-size: 1.8rem;
+         
+        }
+        
+        .logo-image{
+            height: 100%;
+        }
+        .form-search{
+            position:relative;
+            left: 25%;
+          
+        }
+        #nav-input-search{
+            width: 400px;
+        }
+        .navigation-auth{
+            position: relative;
+            left: -5%;
+        }
+        #nav-btn{
+            margin-right: 5%;
+        }
+
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 250px; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 40px; /* Stay at the top */
+            left: 0;
+            background-color: #eebe73; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+          }
+          
+          /* The navigation menu links */
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+          
+          /* When you mouse over the navigation links, change their color */
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+          
+          /* Position and style the close button (top right corner) */
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          
+          
+          
+          /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+        
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navigation">
+        <div class="container-fluid">
+            <div class="nav navbar-nav navbar-left" id="nav-btn">
+                <button class="btn btn-block navbar-btn" id="navbar-btn1" onclick="openNav()" >
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><span style="font-size: 2.8rem; font-weight:800;">StudentV</span></a>
+            </div>
+            
+            <ul class="nav navbar-nav navbar-right navigation-auth">
+                <li><a href="#"><span class="glyphicon glyphicon-about"></span>About</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left form-search" action="#">
+                    <div class="input-group">
+                    <input type="text" class="form-control" id="nav-input-search" placeholder="Search">
+                    <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search fa-lg"></i></button></div></div>
+            </form>
+            
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          
+
+    <script src="../scripts/sidebar.js" ></script>
+
+</body>
+
+</html>
